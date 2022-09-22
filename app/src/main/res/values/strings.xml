@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Clone toss</string>
+
+    <string name="title_name">onthelook</string>
+    <string name="alarm_icon">alarm_icon</string>
+    <string name="search_icon">search_icon</string>
+    <string name="tabarpopularity">인기</string>
+    <string name="tabbarquest">탐색</string>
+    <string name="tabbarfollowing">팔로잉</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

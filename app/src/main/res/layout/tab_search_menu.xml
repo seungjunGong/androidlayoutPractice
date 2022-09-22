@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="840dp"
+    android:background="@color/white">
+
+    <HorizontalScrollView
+        android:id="@+id/search_menu_list_sc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ig_tab_search1"
+                android:gravity="center"
+                android:text="체형별코디"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ig_tab_search2"
+                android:gravity="center"
+                android:text="상황별코디"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ig_tab_search3"
+                android:gravity="center"
+                android:text="인기제품코디"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ig_tab_search4"
+                android:gravity="center"
+                android:text="상의"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ig_tab_search5"
+                android:gravity="center"
+                android:text="하의"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ig_tab_search6"
+                android:gravity="center"
+                android:text="아우터"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ig_tab_search7"
+                android:gravity="center"
+                android:text="신발"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ig_tab_search8s"
+                android:gravity="center"
+                android:text="가방"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ig_tab_search9"
+                android:gravity="center"
+                android:text="모자"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ig_tab_search10"
+                android:gravity="center"
+                android:text="액세사리"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/option_text_sc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/search_menu_list_sc"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/bright_gray"
+                android:drawableStart="@drawable/ic_funnel"
+                android:gravity="fill_vertical"
+                android:text="3"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="남"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="여"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="140-150cm"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="미니멀"
+                android:textColor="@color/gray" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="이지캐주얼"
+                android:textColor="@color/gray" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="비즈니스캐주얼"
+                android:textColor="@color/gray" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="아메카지"
+                android:textColor="@color/gray" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="스트릿"
+                android:textColor="@color/gray" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="시티보이"
+                android:textColor="@color/gray" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="스포티"
+                android:textColor="@color/gray" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="유니크"
+                android:textColor="@color/gray" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="레트로"
+                android:textColor="@color/gray" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="러블리"
+                android:textColor="@color/gray" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/bright_gray"
+                android:gravity="center"
+                android:text="모던캐주얼"
+                android:textColor="@color/gray" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:drawableTop="@drawable/ic_tabsearch_person"
+        android:gravity="center"
+        android:text="아쉽게도 현재 필터에\n등록된 스타일이 없어요"
+        android:textColor="@color/bright_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/option_text_sc" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

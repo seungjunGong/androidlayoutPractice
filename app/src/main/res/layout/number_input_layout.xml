@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:text="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginBottom="400dp">
+
+    <TextView
+        android:id="@+id/input_phoneNum_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="휴대폰 번호를 입력해주세요."
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/phoneNum_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="휴대폰 번호"
+        android:textColorHint="@color/gray"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@color/blue"
+        android:paddingStart="0dp"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="통신사"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LG U+"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:tint="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="20dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider_carrier_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주민등록번호"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp">
+
+        <TextView
+            android:id="@+id/rrNum_front_text"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:inputType="number"
+            android:paddingStart="0dp"
+            android:text="123456"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/rrNum_hyphen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rrNum_front_text"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/rrNum_back_text"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toRightOf="@id/rrNum_hyphen"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/password_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rrNum_front_text"
+            android:layout_toRightOf="@id/rrNum_back_text"
+            android:src="@drawable/password" />
+
+        <View
+            android:id="@+id/rrNum_front_text_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/rrNum_front_text"
+            android:layout_toLeftOf="@id/rrNum_hyphen"
+            android:background="@color/gray" />
+
+        <View
+            android:id="@+id/rrNum_back_text_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/rrNum_front_text"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toLeftOf="@id/password_image"
+            android:layout_toRightOf="@id/rrNum_hyphen"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="TOSS"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginStart="20dp"
+        />
+
+    <View
+        android:id="@+id/divider_name_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/gray" />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
